@@ -3,6 +3,9 @@ docker-ctfscore-raspi-addon
 
 [Docker版のCTFスコアサーバ](https://github.com/yukiosawa/docker-ctfscore)に、Raspberry Pi向けのLED点滅機能を付加します。
 
+![ltika](https://user-images.githubusercontent.com/12450447/29386272-22b185e2-8316-11e7-8a43-d2da3206db48.jpg)
+
+
 ## 説明
 Raspberry Piをスコアサーバとする場合、問題正解時にLEDをチカチカさせることができます。
 - 必要なもの
