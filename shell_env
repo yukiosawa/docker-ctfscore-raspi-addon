@@ -1,0 +1,23 @@
+# common setting for shell scripts
+
+##########
+# Docker #
+##########
+# images
+IMAGE=yuki/ctfscore:v1.1-ltika
+
+# containers
+CONTAINER=ctfscore
+
+get_container_ip() {
+  CONTAINER_IP=$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $CONTAINER)
+  if [ -z $CONTAINER_IP ]; then
+    echo "Failed to get IP address of the container $CONTAINER"
+    return 1
+  fi
+  return 0
+}
+
+# script files to copy from containers
+SCRIPTS=(common.sh mysql_backup.sh mysql_client.sh mysql_ping.sh mysql_restore.sh)
+

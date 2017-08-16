@@ -1,0 +1,9 @@
+73a74,81
+>     // Raspberry Pi上でLチカ
+>     public static function ltikaOnRaspi()
+>     {
+>         $command = '/var/www/ctfscore/etc/scripts/ltika.py > /dev/null &';
+>         exec($command);
+>     }
+> 
+> 
